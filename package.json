@@ -12,10 +12,10 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "fathom-client": "^3.4.0",
-    "prettier": "^2.4.1",
-    "prettier-plugin-svelte": "^2.4.0",
-    "svelte": "^3.44.0"
+    "fathom-client": "3.4.0",
+    "prettier": "2.5.1",
+    "prettier-plugin-svelte": "2.6.0",
+    "svelte": "3.46.4"
   },
   "type": "module"
 }
