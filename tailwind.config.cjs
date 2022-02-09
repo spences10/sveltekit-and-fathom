@@ -5,7 +5,11 @@ const config = {
     extend: {},
   },
 
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+
+  daisyui: {
+    themes: ['forest'],
+  },
 }
 
 module.exports = config

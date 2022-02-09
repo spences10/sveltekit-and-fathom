@@ -1,7 +1,7 @@
 <section
   class="prose-xl prose-h1:text-secondary prose-a:link-primary"
 >
-  <h1>About</h1>
+  <h1>Blog</h1>
 
-  <p>This site was built to made to showcase Fathom Analytics.</p>
+  <p>Bloggy, blog mc bloggerson!</p>
 </section>
