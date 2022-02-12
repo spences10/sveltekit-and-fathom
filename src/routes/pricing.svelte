@@ -30,7 +30,7 @@
             </div>
           </div>
           <a
-            href="#"
+            href="/"
             class="mt-6 inline-block w-full rounded-md border border-transparent bg-white py-2 px-8 text-center text-sm font-medium text-primary shadow-sm sm:mt-0 sm:w-auto lg:mt-6 lg:w-full"
             >Buy Starter</a
           >
@@ -86,7 +86,7 @@
             </div>
           </div>
           <a
-            href="#"
+            href="/"
             class="mt-6 inline-block w-full rounded-md border border-transparent bg-primary py-2 px-8 text-center text-sm font-medium shadow-sm hover:bg-primary sm:mt-0 sm:w-auto lg:mt-6 lg:w-full"
           >
             Buy Scale
@@ -159,7 +159,7 @@
             </div>
           </div>
           <a
-            href="#"
+            href="/"
             class="mt-6 inline-block w-full rounded-md border border-transparent bg-white py-2 px-8 text-center text-sm font-medium text-primary shadow-sm sm:mt-0 sm:w-auto lg:mt-6 lg:w-full"
             >Buy Growth</a
           >
