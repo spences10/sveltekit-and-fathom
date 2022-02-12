@@ -6,8 +6,8 @@
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+    "lint": "prettier --ignore-path .prettierignore --check --plugin-search-dir=. .",
+    "format": "prettier --ignore-path .prettierignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
