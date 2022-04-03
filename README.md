@@ -1,46 +1,18 @@
-# create-svelte
+# Fathom Analytics with SvelteKit
 
-Everything you need to build a Svelte project, powered by
-[`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is the accompanying code for the blog post on using Fathom
+Analytics with SvelteKit.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step.
-Congrats!
+You can check out the demo site over on
+[ideal-memory.com](https://ideal-memory.com).
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+Check out the Fathom Dashboard for this site here: [app.usefathom.com/share/nymdtplm/ideal-memory](https://app.usefathom.com/share/nymdtplm/ideal-memory).
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+You can check out the blog post I made over here:
+[scottspence.com/posts/fathom-analytics-with-svelte](https://scottspence.com/posts/fathom-analytics-with-svelte).
 
-> Note: the `@next` is temporary
+Acknowledgements:
 
-## Developing
-
-Once you've created a project and installed dependencies with
-`npm install` (or `pnpm install` or `yarn`), start a development
-server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an
-> [adapter](https://kit.svelte.dev/docs#adapters) for your target
-> environment.
+- [Matt Jennings](https://mattjennings.io/blog/how-to-use-fathom-analytics-with-sveltekit) for his great blog post on how to use Fathom Analytics with SvelteKit.
+- [Derrick Reimer](https://github.com/derrickreimer/fathom-client) for the awesome [fathom-client](https://github.com/derrickreimer/fathom-client) package.
