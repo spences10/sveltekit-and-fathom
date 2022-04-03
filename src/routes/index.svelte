@@ -2,6 +2,10 @@
   import { trackGoal } from 'fathom-client'
 </script>
 
+<svelte:head>
+  <title>SvelteKit with Fathom</title>
+</svelte:head>
+
 <section
   class="prose-xl prose-h1:text-secondary prose-a:link-primary"
 >

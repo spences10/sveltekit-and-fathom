@@ -2,6 +2,10 @@
   import Check from '$lib/icons/check.svelte'
 </script>
 
+<svelte:head>
+  <title>SvelteKit with Fathom | Pricing</title>
+</svelte:head>
+
 <div
   class="relative mx-auto mt-8 max-w-2xl px-4 pb-8 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-0"
 >

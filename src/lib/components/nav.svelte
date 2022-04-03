@@ -12,16 +12,16 @@
   </div>
   <div class="navbar-center mx-2 hidden px-2 lg:flex">
     <div class="flex items-stretch">
-      <a href="/pricing" class="btn btn-ghost rounded-btn btn-sm">
+      <a href="/pricing" class="btn btn-ghost btn-sm rounded-btn">
         Pricing
       </a>
-      <a href="/contact" class="btn btn-ghost rounded-btn btn-sm">
+      <a href="/contact" class="btn btn-ghost btn-sm rounded-btn">
         Contact Us
       </a>
-      <a href="/about" class="btn btn-ghost rounded-btn btn-sm">
+      <a href="/about" class="btn btn-ghost btn-sm rounded-btn">
         About
       </a>
-      <a href="/blog" class="btn btn-ghost rounded-btn btn-sm">
+      <a href="/blog" class="btn btn-ghost btn-sm rounded-btn">
         Blog
       </a>
     </div>
