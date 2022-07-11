@@ -15,7 +15,7 @@ specifiers:
   svelte: 3.49.0
   svelte-preprocess: 4.10.7
   tailwindcss: 3.1.5
-  vite: ^2.9.14
+  vite: 2.9.14
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.55
@@ -1484,15 +1484,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /resolve/1.22.0:
-    resolution: {integrity: sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==}
-    hasBin: true
-    dependencies:
-      is-core-module: 2.9.0
-      path-parse: 1.0.7
-      supports-preserve-symlinks-flag: 1.0.0
-    dev: true
-
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
     hasBin: true
@@ -1851,7 +1842,7 @@ packages:
     dependencies:
       esbuild: 0.14.42
       postcss: 8.4.14
-      resolve: 1.22.0
+      resolve: 1.22.1
       rollup: 2.75.5
     optionalDependencies:
       fsevents: 2.3.2
