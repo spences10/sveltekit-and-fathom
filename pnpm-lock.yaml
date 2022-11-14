@@ -5,7 +5,7 @@ specifiers:
   '@sveltejs/kit': next
   '@tailwindcss/typography': 0.5.8
   autoprefixer: 10.4.13
-  daisyui: 2.38.1
+  daisyui: 2.40.1
   fathom-client: 3.5.0
   postcss: 8.4.18
   postcss-load-config: 4.0.1
@@ -19,10 +19,10 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-auto': 1.0.0-next.87
-  '@sveltejs/kit': 1.0.0-next.543_svelte@3.52.0+vite@3.2.2
+  '@sveltejs/kit': 1.0.0-next.544_svelte@3.52.0+vite@3.2.2
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
   autoprefixer: 10.4.13_postcss@8.4.18
-  daisyui: 2.38.1_lycaqaeny3mp632atgvyvqdgwe
+  daisyui: 2.40.1_lycaqaeny3mp632atgvyvqdgwe
   fathom-client: 3.5.0
   postcss: 8.4.18
   postcss-load-config: 4.0.1_postcss@8.4.18
@@ -160,8 +160,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.543_svelte@3.52.0+vite@3.2.2:
-    resolution: {integrity: sha512-aOd5SX+LPUqe8isXQV7c+XDbi/499Elw2D2igVOya51j26nISptnLmY9KsMBD48Tjl6Va3kUfsa1R1U87vZJRA==}
+  /@sveltejs/kit/1.0.0-next.544_svelte@3.52.0+vite@3.2.2:
+    resolution: {integrity: sha512-zgQHiSvxiTDjJJROj9mPwIEoT6sAopagDroh89cHKarKc2eK/1nISA2dascKz/atGF8mghOn7RXZPnPofr01fQ==}
     engines: {node: '>=16.14'}
     hasBin: true
     requiresBuild: true
@@ -484,8 +484,8 @@ packages:
     hasBin: true
     dev: true
 
-  /daisyui/2.38.1_lycaqaeny3mp632atgvyvqdgwe:
-    resolution: {integrity: sha512-fHAVi+bT3H9QCNM7LNEH1EMPT0IwqufuW2RNhTJZorX3TftB1bWW437BVmSt70AZH72Xvp0mVxwVS3ChSKSj0w==}
+  /daisyui/2.40.1_lycaqaeny3mp632atgvyvqdgwe:
+    resolution: {integrity: sha512-nzLpcU8kCLU4zoMQ0hUKw1orRRn2x/LJLZenIsHF+UlGVsml02U4u20nb/knN7B06MPpDZ4RAZyp0rEp67iwzQ==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
