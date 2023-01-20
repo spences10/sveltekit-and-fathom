@@ -13,7 +13,7 @@ specifiers:
   prettier-plugin-svelte: 2.9.0
   prettier-plugin-tailwindcss: 0.2.1
   svelte: 3.55.1
-  svelte-preprocess: 5.0.0
+  svelte-preprocess: 5.0.1
   tailwindcss: 3.2.4
   vite: 4.0.4
 
@@ -30,7 +30,7 @@ devDependencies:
   prettier-plugin-svelte: 2.9.0_kdmmghgdi3ngrsq6otxkjilbry
   prettier-plugin-tailwindcss: 0.2.1_prettier@2.8.3
   svelte: 3.55.1
-  svelte-preprocess: 5.0.0_gqx7lw3sljhsd4bstor5m2aa2u
+  svelte-preprocess: 5.0.1_gqx7lw3sljhsd4bstor5m2aa2u
   tailwindcss: 3.2.4_postcss@8.4.21
   vite: 4.0.4
 
@@ -1111,24 +1111,19 @@ packages:
       totalist: 3.0.0
     dev: true
 
-  /sorcery/0.10.0:
-    resolution: {integrity: sha512-R5ocFmKZQFfSTstfOtHjJuAwbpGyf9qjQa1egyhvXSbM7emjrtLXtGdZsDJDABC85YBfVvrOiGWKSYXPKdvP1g==}
+  /sorcery/0.11.0:
+    resolution: {integrity: sha512-J69LQ22xrQB1cIFJhPfgtLuI6BpWRiWu1Y3vSsIwK/eAScqJxd/+CJlUuHQRdX2C9NGFamq+KqNywGgaThwfHw==}
     hasBin: true
     dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.14
       buffer-crc32: 0.2.13
       minimist: 1.2.6
       sander: 0.5.1
-      sourcemap-codec: 1.4.8
     dev: true
 
   /source-map-js/1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /sourcemap-codec/1.4.8:
-    resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
-    deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: true
 
   /streamsearch/1.1.0:
@@ -1157,8 +1152,8 @@ packages:
       svelte: 3.55.1
     dev: true
 
-  /svelte-preprocess/5.0.0_gqx7lw3sljhsd4bstor5m2aa2u:
-    resolution: {integrity: sha512-q7lpa7i2FBu8Pa+G0MmuQQWETBwCKgsGmuq1Sf6n8q4uaG9ZLcLP0Y+etC6bF4sE6EbLxfiI38zV6RfPe3RSfg==}
+  /svelte-preprocess/5.0.1_gqx7lw3sljhsd4bstor5m2aa2u:
+    resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
     engines: {node: '>= 14.10.0'}
     requiresBuild: true
     peerDependencies:
@@ -1201,7 +1196,7 @@ packages:
       magic-string: 0.27.0
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
-      sorcery: 0.10.0
+      sorcery: 0.11.0
       strip-indent: 3.0.0
       svelte: 3.55.1
     dev: true
