@@ -1,15 +1,15 @@
 const config = {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 
-  theme: {
-    extend: {},
-  },
+	theme: {
+		extend: {},
+	},
 
-  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+	plugins: [require('@tailwindcss/typography'), require('daisyui')],
 
-  daisyui: {
-    themes: ['forest'],
-  },
+	daisyui: {
+		themes: ['forest'],
+	},
 }
 
 module.exports = config
