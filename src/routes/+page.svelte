@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { trackGoal } from 'fathom-client'
 </script>
 
@@ -33,7 +33,7 @@
 
 	<button
 		class="btn-primary btn"
-		on:click={trackGoal(`Q0PJFFBW`, 100)}
+		on:click={() => trackGoal(`Q0PJFFBW`, 100)}
 	>
 		Don't Click This Button!!
 	</button>
