@@ -19,6 +19,8 @@
 			text: 'Blog',
 		},
 	]
+
+	export let visitors: number
 </script>
 
 <div class="navbar mb-10 bg-neutral text-neutral-content shadow-lg">
@@ -36,5 +38,11 @@
 			{/each}
 		</div>
 	</div>
-	<div class="navbar-end" />
+	<div class="navbar-end">
+		<p
+			class="cursor-pointer rounded-xl bg-secondary px-2 text-sm font-semibold tracking-wide text-secondary-content"
+		>
+			{visitors} Live Visitors
+		</p>
+	</div>
 </div>

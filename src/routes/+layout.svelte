@@ -9,6 +9,9 @@
 	import * as Fathom from 'fathom-client'
 	import { onMount } from 'svelte'
 	import '../app.css'
+	import type { PageData } from './$types'
+
+	export let data: PageData
 
 	onMount(async () => {
 		Fathom.load(PUBLIC_FATHOM_ID, {
@@ -19,7 +22,7 @@
 	$: $page.url.pathname, browser && Fathom.trackPageview()
 </script>
 
-<Nav />
+<Nav visitors={data?.visitors.total} />
 <main class="container mx-auto mb-20 max-w-3xl px-4">
 	<slot />
 </main>

@@ -1,5 +1,9 @@
 <script lang="ts">
 	import { trackGoal } from 'fathom-client'
+	import { AnalyticsCard } from '$lib/components'
+	import type { PageData } from './$types'
+
+	export let data: PageData
 </script>
 
 <svelte:head>
@@ -7,7 +11,7 @@
 </svelte:head>
 
 <section
-	class="prose-xl prose-h1:text-secondary prose-a:link-primary"
+	class="prose-xl prose-a:link-primary prose-h1:text-secondary"
 >
 	<h1>Welcome to SvelteKit and Fathom Analytics</h1>
 
@@ -37,4 +41,13 @@
 	>
 		Don't Click This Button!!
 	</button>
+
+	<div class="not-prose mt-10">
+		<p>Live Analytics for daily visits.</p>
+		<AnalyticsCard page_analytics={data?.daily_visits[0]} />
+		<p>Live Analytics for monthly visits.</p>
+		<AnalyticsCard page_analytics={data?.monthly_visits[0]} />
+		<p>Live Analytics for yearly visits.</p>
+		<AnalyticsCard page_analytics={data?.yearly_visits[0]} />
+	</div>
 </section>
