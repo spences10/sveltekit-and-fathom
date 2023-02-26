@@ -3,21 +3,31 @@
 This is the accompanying code for the blog post on using Fathom
 Analytics with SvelteKit.
 
-You can check out the demo site over on
-[ideal-memory.com](https://ideal-memory.com).
+Blog Posts:
 
-Check out the Fathom Dashboard for this site here:
-[app.usefathom.com/share/nymdtplm/ideal-memory](https://app.usefathom.com/share/nymdtplm/ideal-memory).
+- Setting up with [Fathom Analytics with SvelteKit]
+- [Adding real-time analytics to my SvelteKit site with Fathom]
 
-You can check out the blog post I made over here:
-[scottspence.com/posts/fathom-analytics-with-svelte](https://scottspence.com/posts/fathom-analytics-with-svelte).
+Demo site over on [ideal-memory.com].
+
+Check out the [Fathom Dashboard] for this site.
 
 Acknowledgements:
 
-- [Matt Jennings](https://mattjennings.io/blog/how-to-use-fathom-analytics-with-sveltekit)
-  for his great blog post on how to use Fathom Analytics with
-  SvelteKit.
-- [Derrick Reimer](https://github.com/derrickreimer/fathom-client) for
-  the awesome
-  [fathom-client](https://github.com/derrickreimer/fathom-client)
-  package.
+- [Matt Jennings] for his great blog post on how to use Fathom
+  Analytics with SvelteKit.
+- [Derrick Reimer] for the awesome [fathom-client] package.
+
+<!-- Links -->
+
+[Fathom Analytics with SvelteKit]:
+	https://scottspence.com/posts/fathom-analytics-with-svelte
+[Adding real-time analytics to my SvelteKit site with Fathom]:
+	https://scottspence.com/posts/adding-real-time-analytics-to-my-sveltekit-site-with-fathom
+[ideal-memory.com]: https://ideal-memory.com
+[fathom dashboard]:
+	https://app.usefathom.com/share/nymdtplm/ideal-memory
+[Matt Jennings]:
+	https://mattjennings.io/blog/how-to-use-fathom-analytics-with-sveltekit
+[Derrick Reimer]: https://github.com/derrickreimer
+[fathom-client]: https://github.com/derrickreimer/fathom-client
