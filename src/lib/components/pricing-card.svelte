@@ -9,11 +9,11 @@
 </script>
 
 <div
-	class="stats p-3 mb-5 w-5/6 sm:w-2/3 md:w-full {switch_colors
-		? `md:-my-4 ring ring-accent bg-primary/80 text-primary-content`
+	class="stats mb-5 w-5/6 p-3 sm:w-2/3 md:w-full {switch_colors
+		? `bg-primary/80 text-primary-content ring ring-accent md:-my-4`
 		: `bg-primary/50 text-primary-content`}"
 >
-	<div class="stat flex flex-col flex-grow-0">
+	<div class="stat flex flex-grow-0 flex-col">
 		<div>
 			<h3 class="stat-title">{title}</h3>
 			<p class="stat-value">{price}</p>
