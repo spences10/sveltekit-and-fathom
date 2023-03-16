@@ -13,7 +13,7 @@ export const object_to_query_params = (
 	const params = Object.entries(obj).map(
 		([key, value]) => `${key}=${value}`
 	)
-	return '?' + params.join('&')
+	return `?${params.join('&')}`
 }
 
 export const page_analytics = async (

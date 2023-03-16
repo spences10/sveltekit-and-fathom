@@ -22,7 +22,7 @@
 	$: $page.url.pathname, browser && Fathom.trackPageview()
 </script>
 
-<Nav visitors={data?.visitors.total} />
+<Nav visitors={data?.visitors?.total || 0} />
 <main class="container mx-auto mb-20 max-w-3xl px-4">
 	<slot />
 </main>
