@@ -14,6 +14,7 @@ Check out the [Fathom Dashboard] for this site.
 
 Acknowledgements:
 
+- [Geoff Rich] for his great [Svelte with Serverless Redis] post.
 - [Matt Jennings] for his great blog post on how to use Fathom
   Analytics with SvelteKit.
 - [Derrick Reimer] for the awesome [fathom-client] package.
@@ -31,3 +32,6 @@ Acknowledgements:
 	https://mattjennings.io/blog/how-to-use-fathom-analytics-with-sveltekit
 [Derrick Reimer]: https://github.com/derrickreimer
 [fathom-client]: https://github.com/derrickreimer/fathom-client
+[Geoff Rich]: https://github.com/geoffrich
+[Svelte with Serverless Redis]:
+	https://upstash.com/blog/svelte-with-serverless-redis

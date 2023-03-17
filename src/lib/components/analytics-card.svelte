@@ -13,21 +13,21 @@
 	<div class="stat">
 		<div class="stat-title">Entries</div>
 		<div class="stat-value text-2xl">
-			{page_analytics?.visits}
+			{page_analytics?.visits || 0}
 		</div>
 	</div>
 
 	<div class="stat">
 		<div class="stat-title">Visitors</div>
 		<div class="stat-value text-2xl">
-			{page_analytics?.uniques}
+			{page_analytics?.uniques || 0}
 		</div>
 	</div>
 
 	<div class="stat">
 		<div class="stat-title">Views</div>
 		<div class="stat-value text-2xl">
-			{page_analytics?.pageviews}
+			{page_analytics?.pageviews || 0}
 		</div>
 	</div>
 </div>
