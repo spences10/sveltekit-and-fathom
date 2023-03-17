@@ -1,3 +1,4 @@
+import redis, { get_page_analytics } from '$lib/redis'
 import {
 	endOfDay,
 	endOfMonth,
@@ -10,9 +11,9 @@ import {
 export const object_to_query_params = (
 	obj: { [s: string]: unknown } | ArrayLike<unknown>
 ) => {
-	const params = Object.entries(obj).map(
-		([key, value]) => `${key}=${value}`
-	)
+	const params = Object.entries(obj)
+		.filter(([, value]) => value !== undefined)
+		.map(([key, value]) => `${key}=${value}`)
 	return `?${params.join('&')}`
 }
 
@@ -39,34 +40,65 @@ export const page_analytics = async (
 	const year_start = startOfYear(new Date()).toISOString()
 	const year_end = endOfYear(new Date()).toISOString()
 
-	// get daily visits
-	const fetch_daily_visits = async () => {
-		const res = await fetch(
-			`${base_path}&date_from=${day_start}&date_to=${day_end}`
-		)
+	const fetch_visits = async (
+		from: string,
+		to: string,
+		grouping?: string
+	) => {
+		const slug = `${base_path}&date_from=${from}&date_to=${to}${
+			grouping ? `&date_grouping=${grouping}` : ''
+		}`
+		const cache_key = get_page_analytics(slug)
+
+		const cached = await get_analytics_from_cache(cache_key)
+		if (cached) {
+			return cached
+		}
+
+		const res = await fetch(slug)
 		const { analytics } = await res.json()
-		return analytics
-	}
-	// get monthly visits
-	const fetch_monthly_visits = async () => {
-		const res = await fetch(
-			`${base_path}&date_from=${month_start}&date_to=${month_end}&date_grouping=month`
-		)
-		const { analytics } = await res.json()
-		return analytics
-	}
-	// get yearly visits
-	const fetch_yearly_visits = async () => {
-		const res = await fetch(
-			`${base_path}&date_from=${year_start}&date_to=${year_end}&date_grouping=year`
-		)
-		const { analytics } = await res.json()
+		await cache_analytics_response(cache_key, analytics)
 		return analytics
 	}
 
+	const [daily_visits, monthly_visits, yearly_visits] =
+		await Promise.all([
+			fetch_visits(day_start, day_end),
+			fetch_visits(month_start, month_end, 'month'),
+			fetch_visits(year_start, year_end, 'year'),
+		])
+
 	return {
-		daily_visits: fetch_daily_visits(),
-		monthly_visits: fetch_monthly_visits(),
-		yearly_visits: fetch_yearly_visits(),
+		daily_visits,
+		monthly_visits,
+		yearly_visits,
+	}
+}
+
+const get_analytics_from_cache = async (cache_key: string) => {
+	try {
+		const cached = await redis.get(cache_key)
+		if (cached) {
+			return JSON.parse(cached)
+		}
+	} catch (e) {
+		console.error(`Error fetching analytics from cache: ${e}`)
+	}
+	return null
+}
+
+const cache_analytics_response = async (
+	cache_key: string,
+	analytics_data: any
+) => {
+	try {
+		await redis.set(
+			cache_key,
+			JSON.stringify(analytics_data),
+			'EX',
+			15 * 60
+		)
+	} catch (e) {
+		console.error(`Error caching analytics response: ${e}`)
 	}
 }

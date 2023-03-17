@@ -54,7 +54,6 @@ const cache_fathom_response = async (
 ) => {
 	try {
 		const cache = { visitors }
-		console.log(`Caching data: ${JSON.stringify(cache)}`)
 		await redis.set(id, JSON.stringify(cache), 'EX', 15 * 60)
 	} catch (e) {
 		console.error(`Error caching Fathom response: ${e}`)
