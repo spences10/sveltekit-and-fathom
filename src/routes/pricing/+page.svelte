@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div
-	class="grid grid-cols-1 justify-items-center gap-4 md:grid-cols-3"
+	class="grid grid-cols-1 justify-items-center gap-4 md:grid-cols-3 lg:-mx-16"
 >
 	<PricingCard
 		title="Starter"
