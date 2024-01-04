@@ -30,8 +30,8 @@ devDependencies:
     specifier: 4.5.0
     version: 4.5.0(postcss@8.4.32)
   date-fns:
-    specifier: ^2.29.3
-    version: 2.29.3
+    specifier: ^3.0.0
+    version: 3.0.6
   eslint:
     specifier: ^8.33.0
     version: 8.33.0
@@ -1107,9 +1107,8 @@ packages:
       - postcss
     dev: true
 
-  /date-fns@2.29.3:
-    resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
-    engines: {node: '>=0.11'}
+  /date-fns@3.0.6:
+    resolution: {integrity: sha512-W+G99rycpKMMF2/YD064b2lE7jJGUe+EjOES7Q8BIGY8sbNdbgcs9XFTZwvzc9Jx1f3k7LB7gZaZa7f8Agzljg==}
     dev: true
 
   /debug@4.3.4:
