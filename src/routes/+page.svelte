@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { trackGoal } from 'fathom-client'
-	import { AnalyticsCard } from '$lib/components'
+	import { AnalyticsCard, has_analytics_data } from '$lib/components'
+	import * as Fathom from 'fathom-client'
 	import type { PageData } from './$types'
 
 	export let data: PageData
@@ -37,17 +37,30 @@
 
 	<button
 		class="btn btn-primary"
-		on:click={() => trackGoal(`Q0PJFFBW`, 100)}
+		on:click={() =>
+			Fathom.trackEvent(`Someone clicked the button!`, {
+				_value: 100000, // Value in pennies
+			})}
 	>
 		Don't Click This Button!!
 	</button>
 
-	<div class="not-prose mt-10">
-		<p>Live Analytics for daily visits.</p>
-		<AnalyticsCard page_analytics={data?.daily_visits[0]} />
-		<p>Live Analytics for monthly visits.</p>
-		<AnalyticsCard page_analytics={data?.monthly_visits[0]} />
-		<p>Live Analytics for yearly visits.</p>
-		<AnalyticsCard page_analytics={data?.yearly_visits[0]} />
-	</div>
+	{#if has_analytics_data(data)}
+		<div class="not-prose mt-10">
+			{#if data?.daily_visits.length > 0}
+				<p>Live Analytics for daily visits.</p>
+				<AnalyticsCard page_analytics={data.daily_visits[0]} />
+			{/if}
+
+			{#if data?.monthly_visits.length > 0}
+				<p>Live Analytics for monthly visits.</p>
+				<AnalyticsCard page_analytics={data.monthly_visits[0]} />
+			{/if}
+
+			{#if data?.yearly_visits.length > 0}
+				<p>Live Analytics for yearly visits.</p>
+				<AnalyticsCard page_analytics={data.yearly_visits[0]} />
+			{/if}
+		</div>
+	{/if}
 </section>

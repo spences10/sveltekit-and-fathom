@@ -1,5 +1,9 @@
 <script lang="ts">
-	import { AnalyticsCard, PricingCard } from '$lib/components'
+	import {
+		AnalyticsCard,
+		PricingCard,
+		has_analytics_data,
+	} from '$lib/components'
 	import type { PageData } from './$types'
 
 	export let data: PageData
@@ -51,11 +55,21 @@
 	/>
 </div>
 
-<div class="not-prose mt-10">
-	<p>Live Analytics for daily visits.</p>
-	<AnalyticsCard page_analytics={data?.daily_visits[0]} />
-	<p>Live Analytics for monthly visits.</p>
-	<AnalyticsCard page_analytics={data?.monthly_visits[0]} />
-	<p>Live Analytics for yearly visits.</p>
-	<AnalyticsCard page_analytics={data?.yearly_visits[0]} />
-</div>
+{#if has_analytics_data(data)}
+	<div class="not-prose mt-10">
+		{#if data?.daily_visits.length > 0}
+			<p>Live Analytics for daily visits.</p>
+			<AnalyticsCard page_analytics={data.daily_visits[0]} />
+		{/if}
+
+		{#if data?.monthly_visits.length > 0}
+			<p>Live Analytics for monthly visits.</p>
+			<AnalyticsCard page_analytics={data.monthly_visits[0]} />
+		{/if}
+
+		{#if data?.yearly_visits.length > 0}
+			<p>Live Analytics for yearly visits.</p>
+			<AnalyticsCard page_analytics={data.yearly_visits[0]} />
+		{/if}
+	</div>
+{/if}

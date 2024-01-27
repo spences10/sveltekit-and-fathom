@@ -1,10 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment'
 	import { page } from '$app/stores'
-	import {
-		PUBLIC_FATHOM_ID,
-		PUBLIC_FATHOM_URL,
-	} from '$env/static/public'
+	import { env } from '$env/dynamic/public'
 	import Nav from '$lib/components/nav.svelte'
 	import * as Fathom from 'fathom-client'
 	import { onMount } from 'svelte'
@@ -14,8 +11,8 @@
 	export let data: PageData
 
 	onMount(async () => {
-		Fathom.load(PUBLIC_FATHOM_ID, {
-			url: PUBLIC_FATHOM_URL,
+		Fathom.load(env.PUBLIC_FATHOM_ID, {
+			url: env.PUBLIC_FATHOM_URL,
 		})
 	})
 
