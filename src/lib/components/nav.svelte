@@ -32,7 +32,7 @@
 	<div class="navbar-center mx-2 hidden px-2 lg:flex">
 		<div class="flex items-stretch">
 			{#each links as { href, text }}
-				<a {href} class="btn-ghost rounded-btn btn-sm btn">
+				<a {href} class="btn btn-ghost btn-sm rounded-btn">
 					{text}
 				</a>
 			{/each}

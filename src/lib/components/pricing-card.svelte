@@ -19,7 +19,7 @@
 			<p class="stat-value">{price}</p>
 			<p class="text-sm text-neutral-content">{billing_plan}</p>
 			<div class="stat-actions">
-				<button class="btn-accent btn-sm btn mb-5 w-full shadow-lg">
+				<button class="btn btn-accent btn-sm mb-5 w-full shadow-lg">
 					Buy {title}
 				</button>
 			</div>

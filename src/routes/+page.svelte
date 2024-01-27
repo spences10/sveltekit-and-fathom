@@ -36,7 +36,7 @@
 	</p>
 
 	<button
-		class="btn-primary btn"
+		class="btn btn-primary"
 		on:click={() => trackGoal(`Q0PJFFBW`, 100)}
 	>
 		Don't Click This Button!!

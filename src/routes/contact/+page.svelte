@@ -17,14 +17,14 @@
 		<input
 			type="text"
 			placeholder="Name"
-			class="input-bordered input-primary input mb-10"
+			class="input input-bordered input-primary mb-10"
 		/>
 		<input
 			type="text"
 			placeholder="Contact"
-			class="input-bordered input-primary input mb-10"
+			class="input input-bordered input-primary mb-10"
 		/>
-		<button class="btn-primary btn">Submit</button>
+		<button class="btn btn-primary">Submit</button>
 	</div>
 
 	<div class="not-prose mt-10">
