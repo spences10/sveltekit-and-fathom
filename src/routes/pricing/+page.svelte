@@ -57,19 +57,13 @@
 
 {#if has_analytics_data(data)}
 	<div class="not-prose mt-10">
-		{#if data?.daily_visits.length > 0}
-			<p>Live Analytics for daily visits.</p>
-			<AnalyticsCard page_analytics={data.daily_visits[0]} />
-		{/if}
+		<p>Live Analytics for daily visits.</p>
+		<AnalyticsCard page_analytics={data.daily_visits[0]} />
 
-		{#if data?.monthly_visits.length > 0}
-			<p>Live Analytics for monthly visits.</p>
-			<AnalyticsCard page_analytics={data.monthly_visits[0]} />
-		{/if}
+		<p>Live Analytics for monthly visits.</p>
+		<AnalyticsCard page_analytics={data.monthly_visits[0]} />
 
-		{#if data?.yearly_visits.length > 0}
-			<p>Live Analytics for yearly visits.</p>
-			<AnalyticsCard page_analytics={data.yearly_visits[0]} />
-		{/if}
+		<p>Live Analytics for yearly visits.</p>
+		<AnalyticsCard page_analytics={data.yearly_visits[0]} />
 	</div>
 {/if}

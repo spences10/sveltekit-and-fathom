@@ -7,27 +7,22 @@
 	}
 </script>
 
+{#snippet stat(data)}
+	<div class="stat">
+		<div class="stat-title">{data.label}</div>
+		<div class="stat-value text-2xl">
+			{data.value || 0}
+		</div>
+	</div>
+{/snippet}
+
 <div
 	class="stats stats-vertical mb-8 w-full border border-secondary shadow-lg md:stats-horizontal"
 >
-	<div class="stat">
-		<div class="stat-title">Entries</div>
-		<div class="stat-value text-2xl">
-			{page_analytics?.visits || 0}
-		</div>
-	</div>
-
-	<div class="stat">
-		<div class="stat-title">Visitors</div>
-		<div class="stat-value text-2xl">
-			{page_analytics?.uniques || 0}
-		</div>
-	</div>
-
-	<div class="stat">
-		<div class="stat-title">Views</div>
-		<div class="stat-value text-2xl">
-			{page_analytics?.pageviews || 0}
-		</div>
-	</div>
+	{@render stat({ label: 'Entries', value: page_analytics?.visits })}
+	{@render stat({
+		label: 'Visitors',
+		value: page_analytics?.uniques,
+	})}
+	{@render stat({ label: 'Views', value: page_analytics?.pageviews })}
 </div>
