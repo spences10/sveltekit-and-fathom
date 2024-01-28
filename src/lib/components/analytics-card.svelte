@@ -19,10 +19,22 @@
 <div
 	class="stats stats-vertical mb-8 w-full border border-secondary shadow-lg md:stats-horizontal"
 >
-	{@render stat({ label: 'Entries', value: page_analytics?.visits })}
-	{@render stat({
-		label: 'Visitors',
-		value: page_analytics?.uniques,
-	})}
-	{@render stat({ label: 'Views', value: page_analytics?.pageviews })}
+	{#if page_analytics?.visits}
+		{@render stat({
+			label: 'Entries',
+			value: page_analytics?.visits,
+		})}
+	{/if}
+	{#if page_analytics?.uniques}
+		{@render stat({
+			label: 'Visitors',
+			value: page_analytics?.uniques,
+		})}
+	{/if}
+	{#if page_analytics?.pageviews}
+		{@render stat({
+			label: 'Views',
+			value: page_analytics?.pageviews,
+		})}
+	{/if}
 </div>
