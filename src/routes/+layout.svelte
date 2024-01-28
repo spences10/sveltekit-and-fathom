@@ -2,24 +2,34 @@
 	import { browser } from '$app/environment'
 	import { page } from '$app/stores'
 	import { env } from '$env/dynamic/public'
-	import Nav from '$lib/components/nav.svelte'
+	import { Nav } from '$lib/components'
 	import * as Fathom from 'fathom-client'
-	import { onMount } from 'svelte'
+	import type { Snippet } from 'svelte'
 	import '../app.css'
-	import type { PageData } from './$types'
+	import type { LayoutData } from './$types'
 
-	export let data: PageData
+	const { PUBLIC_FATHOM_ID, PUBLIC_FATHOM_URL } = env
 
-	onMount(async () => {
-		Fathom.load(env.PUBLIC_FATHOM_ID, {
-			url: env.PUBLIC_FATHOM_URL,
-		})
+	let { data, children } = $props<{
+		data: LayoutData
+		children: Snippet
+	}>()
+
+	$effect(() => {
+		if (browser) {
+			Fathom.load(PUBLIC_FATHOM_ID, {
+				url: PUBLIC_FATHOM_URL,
+			})
+		}
 	})
 
-	$: $page.url.pathname, browser && Fathom.trackPageview()
+	// Track pageview on route change
+	$effect(() => {
+		$page.url.pathname, browser && Fathom.trackPageview()
+	})
 </script>
 
 <Nav visitors={data?.visitors?.total || 0} />
 <main class="container mx-auto mb-20 max-w-3xl px-4">
-	<slot />
+	{@render children()}
 </main>
