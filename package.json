@@ -30,7 +30,7 @@
 		"fathom-client": "3.6.0",
 		"ioredis": "^5.3.2",
 		"postcss": "8.4.34",
-		"postcss-load-config": "5.0.2",
+		"postcss-load-config": "5.0.3",
 		"prettier": "3.2.5",
 		"prettier-plugin-svelte": "3.2.1",
 		"prettier-plugin-tailwindcss": "0.5.11",
