@@ -1,10 +1,14 @@
 <script lang="ts">
-	export let page_analytics: {
-		date: string
-		visits: number
-		uniques: number
-		pageviews: number
-	}
+	let {
+		page_analytics,
+	}: {
+		page_analytics: {
+			date: string
+			visits: number
+			uniques: number
+			pageviews: number
+		}
+	} = $props()
 </script>
 
 {#snippet stat(data)}

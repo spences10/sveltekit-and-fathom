@@ -10,10 +10,13 @@
 
 	const { PUBLIC_FATHOM_ID, PUBLIC_FATHOM_URL } = env
 
-	let { data, children } = $props<{
+	let {
+		data,
+		children,
+	}: {
 		data: LayoutData
 		children: Snippet
-	}>()
+	} = $props()
 
 	$effect(() => {
 		if (browser) {
