@@ -46,7 +46,7 @@ importers:
         version: 9.1.0(eslint@9.0.0)
       eslint-plugin-svelte:
         specifier: ^2.35.1
-        version: 2.36.0(eslint@9.0.0)(svelte@5.0.0-next.110)
+        version: 2.37.0(eslint@9.0.0)(svelte@5.0.0-next.110)
       fathom-client:
         specifier: 3.6.0
         version: 3.6.0
@@ -791,8 +791,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-svelte@2.36.0:
-    resolution: {integrity: sha512-D30hSj13Y8YEn7yGXos7EYp0lpEb3Z2V/M+6a3MZ13KGVhaefdW2A9j8IBIcW4YR+j6fo901USzLeXQz/XbWeQ==}
+  eslint-plugin-svelte@2.37.0:
+    resolution: {integrity: sha512-H/2Gz7agYHEMEEzRuLYuCmAIdjuBnbhFG9hOK0yCdSBvvJGJMkjo+lR6j67OIvLOavgp4L7zA5LnDKi8WqdPhQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0-0 || ^9.0.0-0
@@ -2508,7 +2508,7 @@ snapshots:
     dependencies:
       eslint: 9.0.0
 
-  eslint-plugin-svelte@2.36.0(eslint@9.0.0)(svelte@5.0.0-next.110):
+  eslint-plugin-svelte@2.37.0(eslint@9.0.0)(svelte@5.0.0-next.110):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.0.0)
       '@jridgewell/sourcemap-codec': 1.4.15
