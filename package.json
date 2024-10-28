@@ -22,7 +22,7 @@
 		"@typescript-eslint/eslint-plugin": "^8.11.0",
 		"@typescript-eslint/parser": "^8.11.0",
 		"autoprefixer": "10.4.20",
-		"daisyui": "4.12.13",
+		"daisyui": "4.12.14",
 		"date-fns": "^4.1.0",
 		"eslint": "^9.13.0",
 		"eslint-config-prettier": "^9.1.0",
