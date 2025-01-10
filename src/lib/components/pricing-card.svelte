@@ -32,7 +32,7 @@
 				</li>
 				<div
 					class="my-4 border-2 border-x-0 border-t-0 border-b-accent"
-				/>
+				></div>
 			{/each}
 		</ul>
 	</div>
