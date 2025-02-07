@@ -52,7 +52,7 @@ importers:
         version: 3.7.2
       ioredis:
         specifier: ^5.4.2
-        version: 5.4.2
+        version: 5.5.0
       postcss:
         specifier: 8.5.1
         version: 8.5.1
@@ -999,8 +999,8 @@ packages:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
     engines: {node: '>=0.8.19'}
 
-  ioredis@5.4.2:
-    resolution: {integrity: sha512-0SZXGNGZ+WzISQ67QDyZ2x0+wVxjjUndtD8oSeik/4ajifeiRufed8fCb8QW8VMyi4MXcS+UO1k/0NGhvq1PAg==}
+  ioredis@5.5.0:
+    resolution: {integrity: sha512-7CutT89g23FfSa8MDoIFs2GYYa0PaNiW/OrT+nRyjRXHDZd17HmIgy+reOQ/yhh72NznNjGuS8kbCAcA4Ro4mw==}
     engines: {node: '>=12.22.0'}
 
   is-binary-path@2.1.0:
@@ -2619,7 +2619,7 @@ snapshots:
 
   imurmurhash@0.1.4: {}
 
-  ioredis@5.4.2:
+  ioredis@5.5.0:
     dependencies:
       '@ioredis/commands': 1.2.0
       cluster-key-slot: 1.1.2
